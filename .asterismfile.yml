@@ -1,8 +1,7 @@
 name: SampleStaticLibraryA
 sln_path: Project/windows/SampleStaticLibraryA.sln
 artifacts:
-  - src: Include/*
-    dst: ${ARTIFACTS_ROOT}/include/
-  - src: Dist/*
-    dst: ${ARTIFACTS_ROOT}/lib/
-
+  include_headers:
+    - Include/*
+  link_libraries:
+    - Dist/SampleStaticLibraryA_${PLATFORM}_${CONFIGURATION}.lib
