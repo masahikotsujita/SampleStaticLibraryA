@@ -5,7 +5,7 @@ namespace SampleStaticLibraryA {
 class SampleStaticLibraryA {
 public:
 
-	static void HelloWorld();
+	static void HelloWorld2();
 
 };
 
